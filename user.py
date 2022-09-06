@@ -1,4 +1,7 @@
 name = input("Mi a neved?")
+#felhasználo felület
+
+
 print("Hello " + name + "!")
 
 
