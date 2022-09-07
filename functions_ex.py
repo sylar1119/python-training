@@ -3,6 +3,9 @@
 # ha 0 akkor 0
 # ha nagyobb mint 0 akkor 1et
 
+from re import I
+
+
 def signum(n):
     if n > 0:
         return 1
@@ -49,5 +52,22 @@ def parosoderparatlan(i):
     if i %2 == 0:
         return("páros")
     else:
-        retrun("páratlan")
+        return("páratlan")
 print(parosoderparatlan(10))
+
+# írh is_even nevü függvény ami a paraméteréről eldönti hogy páros e 
+
+def is_even(i):
+    if i %2 ==0:
+        return True
+    else:
+        return False
+print(is_even(3))
+
+def is_even_simpler(i):
+    return i % 2 == 0
+
+if is_even_simpler(11):
+    print("ez egy szép páros szám")
+else:
+    print("ez egy szép páratlan szám")
